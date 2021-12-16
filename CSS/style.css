@@ -1,0 +1,64 @@
+h1{
+    padding: 3%;
+    text-align: center;
+    color: #5b3e64;
+    background-color: #fcebf1;
+}
+.skillList{
+    display: flex;
+    padding: 30px;
+}
+.flexContainer{
+    display: table;
+    width: 33%;
+    text-align: center;
+    margin: 3%;
+}
+.inline-block{
+    display: inline-block;
+    text-align: center;
+}
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 23%;
+    padding: 1%;
+}
+.logo img{
+    max-width: 50px;
+    max-height: auto;
+}
+h3{
+    color: #3b1747
+}
+p{
+    color: #353535;
+    text-align: justify;
+}
+
+.workGrid{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-areas:
+    ". sidebar description description ."
+    ". sidebar description description ."
+    ". sidebar description description .";
+}
+.project{
+    display: flex;
+    padding: 3%;
+}
+.projectimg{
+    width: 33%;
+    padding: 1%;
+    grid-area: myArea;
+}
+.projectimg img{
+    max-width: 150px;
+    max-height: auto;
+}
+.description{
+    grid-area: myArea;
+}
