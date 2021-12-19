@@ -30,7 +30,10 @@ h1{
     max-height: auto;
 }
 h3{
-    color: #3b1747
+    color: #3b1747;
+    text-align: center;
+    margin: 5%;
+
 }
 p{
     color: #353535;
@@ -39,26 +42,41 @@ p{
 
 .workGrid{
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 33% 33% 33%;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 33% 33% 33%;
+    row-gap: 30px;
     grid-template-areas:
-    ". sidebar description description ."
-    ". sidebar description description ."
-    ". sidebar description description .";
-}
-.project{
-    display: flex;
-    padding: 3%;
+    "imgarea1 description1 description1"
+    "imgarea2 description2 description2"
+    "imgarea3 description3 description3";
 }
 .projectimg{
-    width: 33%;
-    padding: 1%;
-    grid-area: myArea;
+    padding: 4%;
+    display: inline-block;
+    text-align: center;
 }
 .projectimg img{
     max-width: 150px;
     max-height: auto;
 }
-.description{
-    grid-area: myArea;
+.projectimg.project1{
+    grid-area: imgarea1;
+}
+.projectimg.project2{
+    grid-area: imgarea2;
+}
+.projectimg.project3{
+    grid-area: imgarea3;
+}
+.description1{
+    grid-area: description1;
+}
+.description2{
+    grid-area: description2;
+}
+.description3{
+    grid-area: description3;
 }
